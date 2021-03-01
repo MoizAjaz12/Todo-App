@@ -1,0 +1,62 @@
+body{
+    background-color: black !important;
+    margin-top: 50px !important;
+}
+
+.container{
+    background-color: black !important;
+    margin: 0 auto !important;
+    padding-top: 10px !important;
+    border: 3px solid black !important;
+    border-radius: 30px !important;
+    text-align: center !important;
+}
+
+h1{
+    font-style: italic !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 55px !important;
+    color: lime !important;
+    text-align: center !important;
+}
+
+#input{
+    height: 30px;
+    padding: 25px;
+    border: none;    
+    border-bottom: 3px solid black;
+    outline: none;
+    margin-right: 10px;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    background-color: black !important;
+    color: white !important;
+}
+
+#input:focus{
+    border: none;
+    border-bottom: 3px solid lime;
+}
+
+button{
+    padding: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 20px !important;
+    background-color: lime;
+    color: black;
+    outline: none !important;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+#list li{
+    padding: 10px !important;
+    text-align: left !important;
+    color: white !important;
+    font-style: italic;
+    margin-right: 20px !important;
+}

@@ -1,10 +1,12 @@
 var list = document.getElementById("list");
 
 function add() {
+    var regex = /\s\s+/g;
     var input = document.getElementById("input");
 
-    if (input.value == "") {
+    if (input.value == "" || regex.test(input.value)) {
         alert("Write Something.....")
+        input.value = ""
     }
 
     else {
@@ -41,9 +43,15 @@ function clearAll() {
 }
 
 function edit(e) {
+    var regex = /\s\s+/g;
     var val = e.parentNode.firstChild.firstChild.nodeValue;
     var editValue = prompt("Edit New Value : ");
-    e.parentNode.firstChild.firstChild.nodeValue = editValue;
+    if (regex.test(editValue)) {
+        alert("Write Something")
+    }
+    else {
+        e.parentNode.firstChild.firstChild.nodeValue = editValue;
+    }
 }
 
 function del(g) {

@@ -46,7 +46,7 @@ function edit(e) {
     var regex = /\s\s+/g;
     var val = e.parentNode.firstChild.firstChild.nodeValue;
     var editValue = prompt("Edit New Value : ");
-    if (regex.test(editValue)) {
+    if (regex.test(editValue) || editValue == "") {
         alert("Write Something")
     }
     else {
